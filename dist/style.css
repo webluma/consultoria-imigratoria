@@ -248,6 +248,10 @@ h1{font-size:59px}
 html{scroll-behavior:auto}
 a{transition:none!important}}
 .footer-bottom{flex-wrap:wrap;align-items:center}
+.footer-credit{display:flex;align-items:center;gap:4px}
+.footer-credit a{color:var(--gold-light);text-decoration:underline;text-underline-offset:4px}
+@media(max-width:640px){
+.footer-credit{width:100%}}
 .contact-section{background:#e9dfce;border-top:1px solid #c7b28b}
 .contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,7vw,100px);align-items:center}
 .contact-intro h2{font-size:clamp(50px,5.2vw,70px);line-height:1.02;margin-bottom:25px}
