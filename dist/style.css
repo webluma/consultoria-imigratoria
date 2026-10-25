@@ -76,6 +76,31 @@ h1 span{color:var(--gold-light)}
 .practice>div{display:grid;grid-template-columns:140px 1fr;gap:20px;padding-block:14px;border-top:1px solid #c8b697;font-size:13px}
 .practice dt{color:#654a2d}
 .practice dd{margin:0;color:#6b6154}
+.reviews-section{background:#3b2f25;color:#f2e7d7}
+.reviews-heading{text-align:center;margin-bottom:50px}
+.reviews-heading .eyebrow{color:#cbb07e;margin-bottom:19px}
+.reviews-heading h2{font-size:58px;margin-bottom:15px}
+.review-preview-label{font-size:11px;color:#c1b19a;margin:0}
+.review-examples{display:grid;grid-template-columns:1fr 1fr;gap:70px}
+.review{margin:0;padding:0 0 0 25px;border-left:1px solid #ac8a54;display:flex;flex-direction:column}
+.review blockquote{font:30px/1.35 var(--display);margin:0 0 28px}
+.review blockquote p{margin:0}
+.review figcaption{margin-top:auto;font-size:13px;color:#e6c994}
+.review figcaption span,.review figcaption small{display:block}
+.review figcaption small{font:12px/1.7 var(--body);color:#c4b49d;margin-top:5px}
+.faq{display:grid;grid-template-columns:1fr 1.5fr;gap:90px}
+.faq-heading h2{font-size:59px}
+.faq-heading>p:not(.eyebrow){color:var(--muted);font-size:15px;max-width:280px;margin-bottom:22px}
+.faq-list{border-top:1px solid #a58b61;min-width:0}
+.faq-list details{border-bottom:1px solid #d0c2ab}
+.faq-list summary{position:relative;list-style:none;cursor:pointer;padding:22px 35px 22px 0;font-size:15px;line-height:1.65}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary::after{content:'+';position:absolute;right:0;top:18px;font-size:22px;color:#8c6b37}
+.faq-list details[open] summary::after{content:'−'}
+.faq-list summary:hover{color:#886b3b}
+.faq-answer{font-size:15px;color:var(--muted);line-height:1.8;padding:0 30px 23px 0}
+.faq-answer p{margin:0}
+.faq-answer .text-link{margin-top:10px}
 .footer{background:var(--deep);color:#dcc8a6}
 .footer-main{display:flex;align-items:center;justify-content:space-between;gap:35px;padding-block:42px}
 .footer .monogram{font-size:58px}
@@ -86,7 +111,7 @@ h1 span{color:var(--gold-light)}
 .back-top{font-size:12px;white-space:nowrap}
 .footer-bottom{border-top:1px solid #665137;display:flex;justify-content:space-between;gap:20px;font-size:11px;color:#b6a58d;padding-block:22px}
 section:focus{outline:none}
-.section>*,.hero-copy,.service-detail>*{min-width:0}
+.section>*,.hero-copy,.service-detail>*,.review-examples>*{min-width:0}
 @media(min-width:1500px){
 .hero-inner{min-height:710px}
 h1{font-size:112px}}
@@ -107,6 +132,10 @@ h1{font-size:88px}
 .about-statement h2{font-size:54px}
 .about-lead{font-size:35px}
 .practice>div{grid-template-columns:120px 1fr;gap:15px}
+.review-examples{gap:45px}
+.review blockquote{font-size:28px}
+.faq{gap:50px}
+.faq-heading h2{font-size:52px}
 .footer-main{gap:25px}
 .footer nav{gap:8px 17px}
 }
@@ -139,6 +168,11 @@ h1{font-size:88px}
 .about-copy{max-width:700px}
 .about-copy>p:not(.about-lead){font-size:16px}
 .practice>div{grid-template-columns:150px 1fr;font-size:14px}
+.faq{grid-template-columns:1fr;gap:30px}
+.faq-heading h2{font-size:52px}
+.faq-heading h2 br{display:none}
+.faq-heading>p:not(.eyebrow){max-width:500px;font-size:16px}
+.faq-list summary,.faq-answer{font-size:16px}
 .footer-main{flex-wrap:wrap}
 .footer-main nav{width:100%;order:3;gap:8px 28px;border-top:1px solid #665137;padding-top:16px}
 .footer-bottom{font-size:12px}
@@ -179,6 +213,17 @@ h2{font-size:43px}
 .practice>div{grid-template-columns:120px 1fr;gap:15px;font-size:13px}
 .practice dt{word-break:normal}
 .about-signature{font-size:11px}
+.reviews-heading{text-align:left;margin-bottom:33px}
+.reviews-heading h2{font-size:43px}
+.review-examples{grid-template-columns:1fr;gap:40px}
+.review{padding-left:20px}
+.review blockquote{font-size:29px}
+.review-preview-label{font-size:12px}
+.review figcaption{font-size:14px}
+.review figcaption small{font-size:12px}
+.faq-heading h2{font-size:46px}
+.faq-answer{padding-right:12px}
+.faq-list summary{padding-block:20px}
 .footer-main{gap:22px;padding-block:30px}
 .footer .monogram{font-size:52px}
 .footer .brand-name{font-size:8px}
@@ -203,7 +248,13 @@ h1{font-size:59px}
 html{scroll-behavior:auto}
 a{transition:none!important}}
 .footer-bottom{flex-wrap:wrap;align-items:center}
-.service-note{font-size:13px}
+.reviews-heading h2{font-size:50px}
+.review blockquote{font-size:27px;line-height:1.4}
+.review-preview-label,.service-note{font-size:13px}
+@media(max-width:640px){
+.reviews-heading h2{font-size:41px}
+.review blockquote{font-size:25px}
+.review-examples{gap:30px}}
 .hero-location{font-size:13px;line-height:1.7;min-width:0}
 .hero-location small{display:block;font-size:12px;color:#d7c7ae;margin-top:2px}
 @media(max-width:640px){
