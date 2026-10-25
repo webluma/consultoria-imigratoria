@@ -248,13 +248,72 @@ h1{font-size:59px}
 html{scroll-behavior:auto}
 a{transition:none!important}}
 .footer-bottom{flex-wrap:wrap;align-items:center}
+.contact-section{background:#e9dfce;border-top:1px solid #c7b28b}
+.contact-layout{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,7vw,100px);align-items:center}
+.contact-intro h2{font-size:clamp(50px,5.2vw,70px);line-height:1.02;margin-bottom:25px}
+.contact-intro h2 span{color:#86612f}
+.contact-description{max-width:410px;font-size:16px;color:#665640;line-height:1.8;margin-bottom:30px}
+.contact-location{display:flex;align-items:flex-start;gap:13px;font-size:14px;margin:0;color:#51412c}
+.contact-location svg{width:22px;height:22px;margin-top:2px;flex-shrink:0;color:#886838}
+.contact-location small{display:block;font-size:13px;color:#6c5c46;margin-top:3px}
+.contact-panel{background:var(--deep);color:#f5edde;padding:42px;border:1px solid #715a3b;box-shadow:0 18px 42px -28px #31241470}
+.contact-panel-heading{display:flex;align-items:center;justify-content:space-between;gap:15px;margin-bottom:26px}
+.contact-panel-heading .eyebrow{color:var(--gold-light);margin:0;font-size:11px;letter-spacing:1.5px}
+.contact-panel-heading svg{width:27px;height:27px;color:var(--gold-light);flex-shrink:0}
+.contact-panel h3{font-size:38px;line-height:1.1;margin-bottom:16px}
+.contact-panel-copy{font-size:15px;line-height:1.75;color:#d1c4af;margin-bottom:25px;max-width:310px}
+.contact-primary{width:100%;cursor:pointer;font-size:15px;min-height:56px}
+.contact-number{font-size:13px;color:#cdbb9e;margin:11px 0 26px;text-align:center;letter-spacing:.7px}
+.contact-email{padding-top:22px;border-top:1px solid #6c573a}
+.contact-email>span{font-size:13px;color:#cdbb9e}
+.contact-email p{font-size:19px;color:#f4e8d2;margin:5px 0 0;overflow-wrap:anywhere}
+.contact-preview-note{font-size:12px;line-height:1.6;color:#c0af95;margin:22px 0 0}
+.contact-client{border-top:1px solid #c6b28e;margin-top:45px;padding-top:20px;display:flex;justify-content:space-between;align-items:center;gap:15px 30px;color:#665640;font-size:13px}
+.contact-client .text-link{flex-shrink:0;font-size:13px}
+.contact-dialog{width:calc(100% - 40px);max-width:470px;padding:38px;background:var(--cream);color:var(--ink);border:1px solid #ad9161;box-shadow:0 25px 100px #0004}
+.contact-dialog::backdrop{background:#201b16b8;backdrop-filter:blur(4px)}
+.contact-dialog h2{font-size:38px;margin-bottom:20px}
+.contact-dialog>p:not(.eyebrow){font-size:15px;line-height:1.75}
+.contact-dialog .eyebrow{padding-right:20px;font-size:11px}
+.dialog-close{position:absolute;right:12px;top:10px;min-width:44px;min-height:44px;border:0;background:transparent;color:var(--ink);font-size:28px;cursor:pointer}
+.dialog-number{padding-top:15px;border-top:1px solid var(--line)}
+.dialog-confirm{background:var(--deep);color:var(--gold-light);border:1px solid var(--deep);cursor:pointer}
 .reviews-heading h2{font-size:50px}
 .review blockquote{font-size:27px;line-height:1.4}
 .review-preview-label,.service-note{font-size:13px}
+@media(max-width:1100px){
+.contact-layout{gap:40px}
+.contact-panel{padding:32px}
+.contact-panel h3{font-size:34px}}
+@media(max-width:760px){
+.contact-layout{grid-template-columns:1fr;gap:30px}
+.contact-intro h2{font-size:54px}
+.contact-description{max-width:540px;margin-bottom:20px}
+.contact-panel{padding:30px}
+.contact-client{margin-top:28px;align-items:flex-start;flex-direction:column;gap:5px}
+.contact-panel-copy{max-width:none}
+.contact-intro .eyebrow{margin-bottom:18px}}
 @media(max-width:640px){
+.contact-section .section{padding-block:45px}
+.contact-intro h2{font-size:48px;margin-bottom:20px}
+.contact-panel{padding:25px}
+.contact-panel h3{font-size:33px}
+.contact-panel-heading{margin-bottom:20px}
+.contact-panel-copy{margin-bottom:20px}
+.contact-number{margin-bottom:20px}
+.contact-email{padding-top:18px}
+.contact-preview-note{margin-top:18px}
 .reviews-heading h2{font-size:41px}
 .review blockquote{font-size:25px}
-.review-examples{gap:30px}}
+.review-examples{gap:30px}
+.contact-dialog{padding:28px}}
+@media(max-width:360px){
+.contact-intro h2{font-size:43px}
+.contact-panel{padding:21px}
+.contact-panel h3{font-size:30px}
+.contact-panel-heading .eyebrow{font-size:10px;letter-spacing:1px}
+.contact-primary{font-size:14px;padding-inline:15px;gap:15px}
+.contact-email p{font-size:17px}}
 .hero-location{font-size:13px;line-height:1.7;min-width:0}
 .hero-location small{display:block;font-size:12px;color:#d7c7ae;margin-top:2px}
 @media(max-width:640px){

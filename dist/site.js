@@ -35,3 +35,9 @@ compactNavigation.addEventListener('change', () => {
   if (!compactNavigation.matches && document.activeElement === menuButton) navigation.querySelector('a').focus();
   setMenuOpen(false);
 });
+
+// The presentation has illustrative contact details; never send to a fake number.
+const contactPreview = document.querySelector('#contact-preview');
+const requestContact = document.querySelector('#request-contact');
+requestContact.addEventListener('click', () => contactPreview.showModal());
+contactPreview.addEventListener('close', () => requestContact.focus());
